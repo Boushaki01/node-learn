@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 export default function App() {
   const { user } = useContext(AuthContext);
 
-  const LoginRoute = ([children]) => {
+  const LoginRoute = ({ children }) => {
     if (user === null) {
       return children;
     } else {
