@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/siswa', siswaRoutes);
 
-const PORT = 3000; // Port index beda dengan port yang ada di mysql
+const PORT = 4000; // Port index beda dengan port yang ada di mysql
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
 });
